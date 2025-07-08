@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>hevFlx</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Optional: Visual JS Background Setup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        const main = document.querySelector("main");
+        if (main) {
+          main.style.opacity = 1;
+          main.style.filter = "blur(0px)";
+        }
+      }, 100);
+    });
+  </script>
+</head>
+<body>
+  <div id="visual-bg">
+  <main>
+    <header class="profile">
+      <img src="./images/_MG_9285.jpg" alt="Profile Picture" class="avatar" />
+      <h1>@hevFlx</h1>
+    </header>
+
+    <ul class="links">
+      <li>
+        <a href="https://www.linkedin.com/in/deniristianto/" target="_blank">
+          <img src="images/linkedinbg.png" alt="LinkedIn" width="18" />
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Deniristianto/" target="_blank">
+          <img src="images/gitbg.png" alt="GitHub" width="18" />
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/deniristianto_/" target="_blank">
+          <img src="images/igbg.png" alt="Instagram" width="18" />
+          Instagram
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@deniristianto7166/" target="_blank">
+          <img src="images/ytbg1.png" alt="YouTube" width="20" />
+          YouTube
+        </a>
+      </li>
+    </ul>
+  </main>
+  </div>
+</body>
+</html>
