@@ -74,3 +74,14 @@ main {
   background-color: rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
 }
+.footer-credit {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.6;
+  font-family: 'Poppins', sans-serif;
+}
