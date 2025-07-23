@@ -8,29 +8,44 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="visual-bg"></div>
 
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+  <main>
+    <header class="profile">
+      <img src="./images/bgprofile.jpg" alt="Profile Picture" class="avatar" />
+      <h1>@deniristianto</h1>
+    </header>
 
-    .footer-credit {
-      position: fixed;
-      bottom: 20px;
-      width: 100%;
-      text-align: center;
-      font-size: 1rem;
-      font-weight: 500;
-      color: #ffffff;
-      opacity: 0.6;
-      z-index: 100;
-    }
-  </style>
+    <ul class="links">
+      <li>
+        <a href="https://www.linkedin.com/in/deniristianto/" target="_blank">
+          <img src="images/linkedinbg.png" alt="LinkedIn" width="18" />
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/dnrst/" target="_blank">
+          <img src="images/gitbg.png" alt="GitHub" width="18" />
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/deniristianto_/" target="_blank">
+          <img src="images/igbg.png" alt="Instagram" width="18" />
+          Instagram
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@deniristianto7166/" target="_blank">
+          <img src="images/ytbg1.png" alt="YouTube" width="20" />
+          YouTube
+        </a>
+      </li>
+    </ul>
+  </main>
 
-  <!-- Optional: Visual JS Background Setup -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script>
     window.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
@@ -42,45 +57,5 @@
       }, 100);
     });
   </script>
-</head>
-<body>
-  <div id="visual-bg">
-    <main>
-      <header class="profile">
-        <img src="./images/bgprofile.jpg" alt="Profile Picture" class="avatar" />
-        <h1>@hevFlx</h1>
-      </header>
-
-      <ul class="links">
-        <li>
-          <a href="https://www.linkedin.com/in/deniristianto/" target="_blank">
-            <img src="images/linkedinbg.png" alt="LinkedIn" width="18" />
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/dnrst/" target="_blank">
-            <img src="images/gitbg.png" alt="GitHub" width="18" />
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/deniristianto_/" target="_blank">
-            <img src="images/igbg.png" alt="Instagram" width="18" />
-            Instagram
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/@deniristianto7166/" target="_blank">
-            <img src="images/ytbg1.png" alt="YouTube" width="20" />
-            YouTube
-          </a>
-        </li>
-      </ul>
-    </main>
-
-    <!-- Footer credit text -->
-    <footer class="footer-credit">Created by hevFlx</footer>
-  </div>
 </body>
 </html>

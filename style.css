@@ -4,17 +4,21 @@ body {
   font-family: 'Poppins', sans-serif;
   background-image: url('./images/bg1.jpg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
+  min-height: 100vh;
 }
 
 #visual-bg {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 main {
@@ -26,9 +30,7 @@ main {
   opacity: 0;
   filter: blur(5px);
   transition: opacity 0.8s ease, filter 0.8s ease;
-}
-
-.profile {
+  padding: 20px;
   text-align: center;
 }
 
@@ -37,8 +39,8 @@ main {
   height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid white;
-  /* box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); */
+  border: 3px solid rgb(161, 161, 161);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* << Efek bayangan hitam */
 }
 
 .profile h1 {
@@ -59,6 +61,7 @@ main {
 .links li a {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   text-decoration: none;
   color: white;
@@ -74,14 +77,27 @@ main {
   background-color: rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
 }
+
 .footer-credit {
-  position: fixed;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #ffffff;
+  margin-top: 40px;
+  font-size: 0.9rem;
   opacity: 0.6;
-  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+  .profile .avatar {
+    width: 90px;
+    height: 90px;
+  }
+
+  .profile h1 {
+    font-size: 1.1rem;
+  }
+
+  .links li a {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
 }
